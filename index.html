@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding-top: 3rem;
+            width: 70%;
+            margin: auto;
+            background: linear-gradient(180deg, #071226 0%, #071a2a 60%);
+            font-family: "Poppins", sans-serif;
+            color: white;
+        }
+
+        .d-flex {
+            display: flex;
+        }
+
+        .image {
+            height: 50px;
+            width: 50px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #6ee7b7, #60a5fa);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 0.5rem;
+        }
+
+        .flex-column {
+            flex-direction: column;
+        }
+
+        .justify-content-between {
+            justify-content: space-between;
+        }
+
+        .nav-items a {
+            text-decoration: none;
+            padding: 0.6rem 1rem;
+            color: #9fb0c8;          
+            transition: all .1s ease-in-out; 
+        }
+        .nav-items a:hover{
+            color: #e0edff;           
+            transform: scale(1.03);
+        }
+
+        .font-color {
+            color: #9fb0c8;
+        }
+
+        .para {
+            color: #9fb0c8;
+            font-size: 14px;
+        }
+
+        .horizon-div {
+            background: linear-gradient(135deg, #6ee7b7, #60a5fa);
+            height: 6px;
+            margin-bottom: 18px;
+            margin-top: 25px;
+            border-radius: 999px;
+        }
+
+        .tag-item {
+            font-size: 14px;
+            background-color: rgba(255, 255, 255, 0.04);
+            padding: .5rem;
+            margin: .3rem;
+            border-radius: 32px;
+        }
+
+        .div-bg {
+            background-color: #0b1220;
+        }
+
+        .body-divs {
+            border-radius: 12px;
+            padding: 18px;
+            box-shadow: 0 6px 24px rgba(2, 6, 23, 0.6);
+            margin: 10px;
+        }
+
+        .buttons {
+            border: 0;
+            font-size: 12px;
+            background-color: #6ee7b7;
+            color: black;
+            border-radius: 12px;
+            padding: 10px 14px;
+            margin: 10px;
+            font-weight: 700;
+            transition: .1s all ease-in-out;
+        }
+
+        .buttons:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+        }
+
+        .div1 {
+            width: 60%;
+            margin-right: 20px;
+        }
+
+        .div2 {
+            width: 39%;
+        }
+
+        .input {
+            all: unset;
+            background-color: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            padding: 10px;
+            border-radius: 8px;
+            color: var(--text);
+            outline: none;
+            margin: 10px;
+        }
+
+        .inpFlex {
+            display: flex;
+            width: auto;
+            flex-direction: column;
+        }
+
+        .skill-tags {
+            font-size: 13px;
+            background-color: rgba(255, 255, 255, 0.04);
+            padding: .5rem;
+            margin: .2rem;
+            border-radius: 20px;
+            width: max-content;
+        }
+
+        .skills-parentdiv {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 20px;
+            justify-content: space-evenly;
+        }
+
+        .skill-headings {
+            margin-bottom: 10px;
+        }
+        .w30{
+            width: 30%;
+        }
+        .wrapper{
+            flex-wrap: wrap ;
+        }
+        .center{
+            justify-content: center;
+        }
+
+        .fz-14{
+            font-size: 14px;
+        }
+        .p-10-60{
+            padding: 10px 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="d-flex justify-content-between">
+        <div class="d-flex">
+            <div class="image">
+                <!-- <img src="#" alt="DL"> -->
+                DL
+            </div>
+            <div class="d-flex flex-column">
+                <h3>Dhairya Lakhmani</h3>
+                <p class="para">Newbie, Learning...</p>
+            </div>
+        </div>
+        <div class="d-flex nav-items">
+            <a href="#">About</a>
+            <a href="#">Skills</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+    <div class="horizon-div"></div>
+    <div class="d-flex">
+        <div class="div-bg body-divs div1">
+            <div>
+                <h2>Hi- I'm <span style="color: #6ee7b7;">Dhairya Lakhmani</span></h2>
+                <p class="font-color">I am a first year student at Scaler School Of Technology, currently working on my
+                    coding and problem
+                    solving skills.</p>
+            </div>
+
+            <div class="d-flex">
+                <div class="tag-item font-color">HTML</div>
+                <div class="tag-item font-color">CSS</div>
+                <div class="tag-item font-color">JavaScript</div>
+                <div class="tag-item font-color">Java</div>
+                <div class="tag-item font-color">Python(Basics)</div>
+                <div class="tag-item font-color">DSA(Learning)</div>
+            </div>
+            <div class="d-flex">
+                <button class="buttons">See Projects</button>
+                <button class="buttons">Contact me</button>
+            </div>
+        </div>
+        <div class="div-bg body-divs div2">
+            <h3>Quick Info</h3>
+            <p class="font-color">Location: Scaler School of Technology, Bangalore. Available for working and learning
+                as an intern.</p>
+            <p class="font-color">Email:</p>
+            <p>dhairyalakhmani27@gmail.com</p>
+        </div>
+    </div>
+    <div class="div-bg flex-column d-flex skills-parentdiv">
+        <h3>Skills</h3>
+        <div class="d-flex skills-parentdiv">
+            <div class="w30">
+                <h4 class="skill-headings">Frontend</h4>
+                <div class="d-flex wrapper">
+                    <div class="skill-tags">HTML and Semantic markup</div>
+                    <div class="skill-tags">CSS(Flexbox,Grid)</div>
+                    <div class="skill-tags">Responsive design</div>
+                </div>
+            </div>
+            <div class="w30">
+                <h4 class="skill-headings">JavaScript</h4>
+                <div class="d-flex wrapper">
+                    <div class="skill-tags">ES6+</div>
+                    <div class="skill-tags">React</div>
+                    <div class="skill-tags">Vanilla JS</div>
+                </div>
+            </div>
+            <div class="w30">
+                <h4 class="skill-headings">Tools</h4>
+                <div class="d-flex wrapper">
+                    <div class="skill-tags">Git</div>
+                    <div class="skill-tags">Figma</div>
+                    <div class="skill-tags">Vite/Webpack</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="div-bg body-divs form-width">
+        <h4>Contact</h4>
+        <form action="submit" class="inpFlex">
+            <input class="input" type="text" placeholder="Your Name">
+            <input class="input" type="text" placeholder="Your email">
+            <textarea name="" class="input" placeholder="Your Message"></textarea>
+        </form>
+        <div class="d-flex center">
+            <button class="buttons fz-14 p-10-60">Submit</button>
+        </div>
+    </div>
+</body>
+
+</html>
