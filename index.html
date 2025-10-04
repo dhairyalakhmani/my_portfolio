@@ -15,7 +15,7 @@
 
         body {
             padding-top: 3rem;
-            width: 70%;
+            width: 50%;
             margin: auto;
             background: linear-gradient(180deg, #071226 0%, #071a2a 60%);
             font-family: "Poppins", sans-serif;
@@ -48,11 +48,12 @@
         .nav-items a {
             text-decoration: none;
             padding: 0.6rem 1rem;
-            color: #9fb0c8;          
-            transition: all .1s ease-in-out; 
+            color: #9fb0c8;
+            transition: all .1s ease-in-out;
         }
-        .nav-items a:hover{
-            color: #e0edff;           
+
+        .nav-items a:hover {
+            color: #e0edff;
             transform: scale(1.03);
         }
 
@@ -154,21 +155,79 @@
         .skill-headings {
             margin-bottom: 10px;
         }
-        .w30{
+
+        .w30 {
             width: 30%;
         }
-        .wrapper{
-            flex-wrap: wrap ;
+
+        .wrapper {
+            flex-wrap: wrap;
         }
-        .center{
+
+        .center {
             justify-content: center;
         }
 
-        .fz-14{
+        .fz-14 {
             font-size: 14px;
         }
-        .p-10-60{
+
+        .p-10-60 {
             padding: 10px 60px;
+        }
+
+        @media (max-width: 1024px) {
+            body {
+                width: 80%;
+            }
+            .div1, .div2 {
+                width: 100%;
+                margin-right: 0;
+            }
+            .d-flex {
+                flex-wrap: wrap;
+            }
+            .nav-items {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                width: 95%;
+                padding-top: 1.5rem;
+            }
+            nav {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .div1, .div2 {
+                width: 100%;
+                margin: 0 0 15px 0;
+            }
+            h2 {
+                font-size: 1.4rem;
+            }
+            h3 {
+                font-size: 1.1rem;
+            }
+            .skills-parentdiv {
+                flex-direction: column;
+                align-items: center;
+            }
+            .w30 {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+            .buttons {
+                width: 100%;
+                text-align: center;
+            }
+            .p-10-60 {
+                padding: 10px 20px;
+            }
         }
     </style>
 </head>
@@ -176,10 +235,7 @@
 <body>
     <nav class="d-flex justify-content-between">
         <div class="d-flex">
-            <div class="image">
-                <!-- <img src="#" alt="DL"> -->
-                DL
-            </div>
+            <div class="image">DL</div>
             <div class="d-flex flex-column">
                 <h3>Dhairya Lakhmani</h3>
                 <p class="para">Newbie, Learning...</p>
@@ -201,7 +257,6 @@
                     coding and problem
                     solving skills.</p>
             </div>
-
             <div class="d-flex">
                 <div class="tag-item font-color">HTML</div>
                 <div class="tag-item font-color">CSS</div>
@@ -264,5 +319,4 @@
         </div>
     </div>
 </body>
-
 </html>
